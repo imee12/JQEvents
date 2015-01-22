@@ -96,3 +96,12 @@ h2 {
   font-size: 55px;
   text-align: center;
 }
+
+button {
+  padding: 5px;
+  margin: 0px 0px 0px 35px;
+
+}
+form {
+  padding: 5px;
+}
