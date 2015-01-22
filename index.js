@@ -63,9 +63,27 @@ $(".box").eq(9).click(function(event) {
 });
 
 $(".box").eq(8).click(function(event) {
-  $(this).find("source").trigger('play');
+  $(this).find("audio2").trigger('play');
 
 });
+
+$(function() {
+  var $newItemButton = $('#newItemButton');
+  var $newItemForm =$('#newItemForm');
+  var $textInput = $('input:text');
+
+$newItemForm.on('submit', function() {
+  event.preventDefault();
+  var newText=$('input:text').val();
+  $(".box").eq(9).after('<h2> Thank you '  + newText  +  '! </h2>');
+
+});
+
+});
+
+
+
+
 
 
 });

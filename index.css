@@ -89,3 +89,10 @@ small {
 .slide {
 -webkit-animation:slidein 5s infinite;
 }
+
+
+h2 {
+  color: white;
+  font-size: 55px;
+  text-align: center;
+}
