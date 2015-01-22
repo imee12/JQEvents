@@ -1,6 +1,8 @@
 body {
   background-image: url(images/kittywallpaper.jpg);
   width: 100%;
+  transition: all .5s ease;
+  cursor: pointer;
 
 }
 
@@ -15,4 +17,14 @@ body {
 h1 {
   font-size: 55px;
   text-align: center;
+}
+
+.hide {
+
+  display: none;
+}
+
+small {
+  width: 10px;
+  
 }
