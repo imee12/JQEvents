@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 
 var $audio = $("audio");
+var $audio2 =$("audio2");
 //var $body = $("body");
 
 $("body").click(function (event){
@@ -59,6 +60,11 @@ $(".box").eq(7).click(function(event) {
 
 $(".box").eq(9).click(function(event) {
   $(this).addClass("slide");
+});
+
+$(".box").eq(8).click(function(event) {
+  $(this).find("source").trigger('play');
+
 });
 
 
