@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-var $body = $("body");
+
+var $audio = $("audio");
+//var $body = $("body");
 
 //$("body").click(function (event){
 ///  $(this).css();
@@ -24,5 +26,9 @@ $(".box").eq(1).click(function(event){
     ///prepend('<img id="theImg" src="theImg.png" />')
 });
 
+$(".box").eq(2).dblclick(function(event){
+  $(this).find("audio").trigger('play');
+
+});
 
 });
