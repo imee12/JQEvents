@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
 
-var $audio = $("audio");
-var $audio2 =$("audio2");
 //var $body = $("body");
 
 $("body").click(function (event){
@@ -28,6 +26,7 @@ $(".box").eq(0).mouseout(function(event){
 $(".box").eq(1).click(function(event){
   $(this).prepend('<img id="theImg" src="images/yodaKitty.jpg"/>');
   $(this).addClass("small");
+  $(this).find("audio").trigger('play');
     ///prepend('<img id="theImg" src="theImg.png" />')
 });
 
@@ -41,7 +40,7 @@ $(".box").eq(3).click(function(event) {
 });
 
 $(".box").eq(4).on("click", function(event) {
-  alert("You Love Helly Kitty!");
+  alert("You Love Hello Kitty!");
 });
 
 $(".box").eq(5).click(function(event) {
@@ -63,7 +62,7 @@ $(".box").eq(9).click(function(event) {
 });
 
 $(".box").eq(8).click(function(event) {
-  $(this).find("audio2").trigger('play');
+  $(this).find("audio").trigger('play');
 
 });
 

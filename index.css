@@ -97,6 +97,13 @@ h2 {
   text-align: center;
 }
 
+
+p {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
 button {
   padding: 5px;
   margin: 0px 0px 0px 35px;
