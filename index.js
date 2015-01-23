@@ -81,14 +81,15 @@ $newItemForm.on('submit', function() {
 });
 
 $(function() {
-  var $window = $(window);
+  var $body = $("body");
   var $slideAd = $('#slideAd');
-  var endZone = $('#footer').offset().top - $window.height() - 100;
+  var endZone = $('#footer').offset().top - ($body.height() - 500);
+  console.log(endZone);
+  $(window).scroll(function (event) {
 
-  $window.on('scroll', function () {
-
-  if ( (endZone) < $window.scrollTop() ) {
-    $slideAd.animate({'right': '10px'}, 250);
+  if ( endZone < $body.scrollTop() ) {
+    //$('#slideAd').css("background", "#ff0000");
+    $slideAd.css("margin", "0px 0px 0px 900px", 250);
   }else {
     $slideAd.stop(true).animate({'right': '-360px'}, 250);
   }

@@ -116,6 +116,15 @@ form {
 
 
 footer {
-  background-color: pink;
+  background-color: none;
   height: 200px;
+}
+
+#slideAd {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  font-size: 35px;
+  transition: all .8s ease;
+  text-align: center;
 }
