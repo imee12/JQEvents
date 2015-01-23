@@ -112,3 +112,10 @@ button {
 form {
   padding: 5px;
 }
+
+
+
+footer {
+  background-color: pink;
+  height: 200px;
+}
