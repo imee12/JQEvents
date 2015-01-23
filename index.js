@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 //var $body = $("body");
 
-$("body").click(function (event){
+$("body").mousemove(function (event){
   $(this).css({"background-image": "none", "background-color": "black"});
 //  $(this).css({"background-image": "images/hellokittyred.jpg" });
 });
@@ -43,7 +43,7 @@ $(".box").eq(4).on("click", function(event) {
   alert("You Love Hello Kitty!");
 });
 
-$(".box").eq(5).click(function(event) {
+$(".box").eq(5).mouseleave(function(event) {
   $(this).addClass("ball");
 });
 
@@ -52,12 +52,12 @@ $(".box").eq(6).click(function(event) {
 });
 
 
-$(".box").eq(7).click(function(event) {
+$(".box").eq(7).hover(function(event) {
   $(this).addClass("wiggle");
   $(this).find("img").css({"padding": "15px"});
 });
 
-$(".box").eq(9).click(function(event) {
+$(".box").eq(9).mouseenter(function(event) {
   $(this).addClass("slide");
 });
 
