@@ -23,9 +23,14 @@ $(".box").eq(0).mouseout(function(event){
 
 });
 
+
+
 $(".box").eq(1).click(function(event){
-  $(this).prepend('<img id="theImg" src="images/yodaKitty.jpg"/>');
-  $(this).addClass("small");
+  $(this).prepend('<img class="theImg" src="images/yodaKitty.jpg">');
+  var $theImg = $(".theImg");
+
+  $(".theImg").css({"width": "200px", "height": "200px", "margin": "10px"})
+  //$(this).hide();
   $(this).find("audio").trigger('play');
     ///prepend('<img id="theImg" src="theImg.png" />')
 });
@@ -101,12 +106,29 @@ $(function() {
 });
 
 
+/*$(Jexample) = (".j-example");
+
+$(Jexample).click(function(event) {
+  $(this).css({"background-position: 0px 0px"})
+
+
+
+});
+document.getElementById('j-example').style.backgroundPosition = '0px 0px';"
+*/
+
+
+
+
+
 
 $(".anim").click(function(event) {
   $("body").css({"background-color": "#24D330"});
-  $("#j-example").css({"margin": "100px"});
+  $("#j-example").show();
+  $("#j-example").css({"display": "inline-block","margin": "100px", "border-radius": "5%", "box-shadow": "inset 0.2em 0.2em 0.8em #24D330"});
+  $("#j-example").css({"zoom": "200%"})
   event.preventDefault();
-  
+
 });
 
 
