@@ -121,10 +121,30 @@ footer {
 }
 
 #slideAd {
+  padding: 15px;
   width: 300px;
-  height: 100px;
-  background-color: red;
-  font-size: 35px;
+  height: 200px;
+  background-color: #7ec0ee;
+  font-size: 15px;
   transition: all .8s ease;
   text-align: center;
+}
+
+
+#hk{
+  background:url('images/HK1.png') no-repeat;
+  width:50px;
+  height:68px;
+  position:fixed;
+  left:0;
+  background-position:0px 0px;
+}
+
+#hk2{
+  background:url('images/HK2.png') no-repeat;
+  width:50px;
+  height:68px;
+  position:fixed;
+  left:0;
+  background-position:0px 0px;
 }
