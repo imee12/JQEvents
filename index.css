@@ -116,6 +116,7 @@ form {
 
 
 footer {
+  position: absolute;
   background-color: none;
   height: 200px;
 }
@@ -130,21 +131,15 @@ footer {
   text-align: center;
 }
 
-
-#hk{
-  background:url('images/HK1.png') no-repeat;
-  width:50px;
-  height:68px;
-  position:fixed;
-  left:0;
-  background-position:0px 0px;
+.anim{
+  position: relative;
+  left: 300px;
+  bottom: 50px;
 }
 
-#hk2{
-  background:url('images/HK2.png') no-repeat;
-  width:50px;
-  height:68px;
-  position:fixed;
-  left:0;
-  background-position:0px 0px;
+#j-example, .box {
+  /*position: relative:*/
+  display: inline-block;
+  vertical-align: middle;
+
 }

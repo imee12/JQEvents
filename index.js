@@ -102,7 +102,11 @@ $(function() {
 
 
 
-
+$(".anim").click(function(event) {
+  $("body").css({"background-color": "#24D330"});
+  $("#j-example").css({"margin": "100px"});
+  event.preventDefault();
+  
 });
 
 
@@ -111,4 +115,6 @@ $(function() {
 
 
 
-//});
+
+
+});
